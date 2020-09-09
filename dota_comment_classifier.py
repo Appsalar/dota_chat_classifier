@@ -137,7 +137,7 @@ print(test)
 
 num_dota_chats = 100_000
 
-dota_chats = pd.read_csv("dota2_chat_messages.csv", nrows=num_dota_chats)
+dota_chats = pd.read_csv("dota2_chat_messages_sample.csv", nrows=num_dota_chats)
 
 dota_chats.drop(['match', 'time', 'slot'], axis=1, inplace=True)
 
