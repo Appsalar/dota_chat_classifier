@@ -100,8 +100,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 
 batch_size = 20
 epoch = 1 # put 2 later when you have time
-history = model.fit(padded_train, y, batch_size, epochs=epoch, validation_split=.25,
-                    callbacks=[early_stopping_callback])
+history = model.fit(padded_train, y, batch_size, epochs=epoch, validation_split=.25)
 
 
 # plt.plot(history.history['accuracy'])
